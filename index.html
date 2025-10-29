@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aymane "Naymax" Haidar Boustati — Annonce de Vente</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#6ee7b7;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    body{margin:0;background:linear-gradient(180deg,#071023 0%, #0b1530 100%);color:#e6eef8;line-height:1.5}
+    .container{max-width:1100px;margin:32px auto;padding:24px}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:14px;overflow:hidden;flex:0 0 120px;background:var(--glass);display:flex;align-items:center;justify-content:center}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:24px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav{margin-left:auto}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:12px}
+
+    .kpi{display:flex;gap:12px;margin-top:12px}
+    .kpi .item{flex:1;background:var(--card);padding:12px;border-radius:10px;text-align:center}
+    .kpi .num{font-weight:700;font-size:18px;color:var(--accent)}
+
+    .about h2,.achievements h2,.gallery h2,.promo h2{margin-top:0}
+
+    .achievements ul{padding-left:20px;color:var(--muted)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery-grid img{width:100%;height:120px;object-fit:cover;border-radius:8px;cursor:pointer}
+
+    aside .buy{display:flex;flex-direction:column;gap:12px}
+    .price{font-size:20px;font-weight:700;color:#ffd166}
+    .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+
+    footer{margin-top:28px;color:var(--muted);text-align:center;font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,1fr)}.avatar{width:88px;height:88px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar"><img src="/mnt/data/IMG_9182.jpeg" alt="Aymane Naymax"></div>
+      <div>
+        <h1>Aymane « Naymax » Haidar Boustati</h1>
+        <p class="lead">Étudiant ingénieur — INSA Rouen Normandie • Originaire de Beni Mellal (Maroc) — Né en décembre 2005</p>
+        <div class="kpi">
+          <div class="item"><div class="num">International</div><div class="muted">Vécu en Espagne • Stage au Canada</div></div>
+          <div class="item"><div class="num">Multidisciplinaire</div><div class="muted">Échecs, Basket, Création vidéo</div></div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#achievements">Succès</a>
+        <a href="#buy">Annonce</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section>
+        <div class="card about" id="about">
+          <h2>Biographie</h2>
+          <p>Aymane Haidar Boustati, connu en ligne sous le pseudo <strong>Naymax</strong>, est un étudiant en ingénierie à l'INSA Rouen Normandie. Né à Beni Mellal au Maroc en décembre 2005, il a grandi entre plusieurs cultures : un long séjour de 6 ans à Malaga (Espagne) où il a développé une partie de sa personnalité sociale et son amour pour la créativité, puis un retour en France à Vernon.</p>
+          <p>Surnommé « Morros » durant ses années en Espagne, il a rapidement montré des qualités de compétiteur — il a remporté avec son frère plusieurs tournois d'échecs. À Vernon il a pratiqué le basket en club (SPN Basket) et a animé ses loisirs par la création de vidéos AMV sur TikTok sous le compte <em>naymax AMV</em>.</p>
+
+          <h3>Parcours scolaire & personnalité</h3>
+          <p>Après un parcours en spécialités scientifiques (Sciences de l'ingénieur puis Mathématiques), Aymane est aujourd'hui à l'INSA où il poursuit sa formation d'ingénieur. Il est décrit par ses pairs comme créatif, persévérant et polyvalent : habitué des projets techniques comme des formats créatifs (montage vidéo, streaming).</p>
+
+          <h3>Expérience internationale</h3>
+          <p>Stage ouvrier au Canada et immersion linguistique en Espagne : ces expériences lui ont donné une forte adaptabilité et le goût des échanges multiculturels.</p>
+        </div>
+
+        <div class="card achievements" id="achievements" style="margin-top:18px">
+          <h2>Points forts & réalisations</h2>
+          <ul>
+            <li>Vainqueur de tournois d’échecs (en duo avec son frère)</li>
+            <li>Pratique sportive : SPN Basket — esprit d'équipe et discipline</li>
+            <li>Créateur de contenus (AMV TikTok) : sens du montage et storytelling visuel</li>
+            <li>Expérience à l'international et capacité d'adaptation (Espagne, Canada)</li>
+            <li>Présence active en ligne — savoir-faire en community management amateur</li>
+          </ul>
+        </div>
+
+        <div class="card gallery" style="margin-top:18px">
+          <h2>Galerie</h2>
+          <div class="gallery-grid">
+            <img src="/mnt/data/IMG_9184.jpeg" alt="Aymane miroir" onclick="openLightbox('/mnt/data/IMG_9184.jpeg')">
+            <img src="/mnt/data/IMG_9029.jpeg" alt="Aymane selfie" onclick="openLightbox('/mnt/data/IMG_9029.jpeg')">
+            <img src="/mnt/data/IMG_9182.jpeg" alt="Aymane profile" onclick="openLightbox('/mnt/data/IMG_9182.jpeg')">
+          </div>
+          <p style="color:var(--muted);margin-top:10px">Cliquez sur une image pour agrandir.</p>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card buy" id="buy">
+          <h2>Annonce — Offre sérieuse</h2>
+          <p>À vendre : Profil personnel & pack de visibilité de Aymane « Naymax » — idéal pour projets créatifs, collaborations esports/streaming, ou recrutement junior ingénieur.</p>
+          <div class="price">À partir de 999€ (négociable)</div>
+          <ul style="color:var(--muted);padding-left:18px">
+            <li>Pack Présence : biographie complète, galerie, 3 vidéos AMV masterisées</li>
+            <li>Pack Pro : + coaching entretien & CV orienté ingénierie</li>
+            <li>Options : sessions de streaming LIVE, collaboration marketing</li>
+          </ul>
+          <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contacter pour acheter</button>
+
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+          <h3 style="margin:0">Fiche rapide</h3>
+          <p style="color:var(--muted);margin:6px 0 0">Né : décembre 2005 • Origine : Beni Mellal (Maroc) • Localisation : Vernon / INSA Rouen</p>
+        </div>
+
+        <div class="card" style="margin-top:14px" id="contact">
+          <h2>Contact & Offre</h2>
+          <form onsubmit="handleSubmit(event)">
+            <label>Nom</label>
+            <input type="text" name="name" required>
+            <label style="margin-top:8px">Email</label>
+            <input type="email" name="email" required>
+            <label style="margin-top:8px">Message</label>
+            <textarea name="message" rows="4" required></textarea>
+            <button class="btn" style="margin-top:8px" type="submit">Envoyer la demande</button>
+          </form>
+          <p style="color:var(--muted);font-size:13px;margin-top:10px">Nous traiterons les demandes sérieuses dans les 48h ouvrées.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © Profil présenté par <strong>Naymax</strong> — Pour modifications ou suppression, contactez le propriétaire du profil.
+    </footer>
+  </div>
+
+  <!-- Lightbox + simple form handler -->
+  <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);align-items:center;justify-content:center;padding:20px">
+    <img id="lightboxImg" src="" alt="" style="max-width:100%;max-height:90%;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}">
+  </div>
+
+  <script>
+    function openLightbox(src){
+      const lb = document.getElementById('lightbox');
+      const img = document.getElementById('lightboxImg');
+      img.src = src; lb.style.display='flex';
+      lb.onclick = ()=>{ lb.style.display='none'; img.src=''; }
+    }
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = {name:form.name.value,email:form.email.value,message:form.message.value};
+      // Simuler l'envoi : dans une vraie version, remplacer par appel API
+      alert('Demande envoyée — ' + data.name + '. Nous reviendrons vers vous par email.');
+      form.reset();
+    }
+  </script>
+</body>
+</html>
